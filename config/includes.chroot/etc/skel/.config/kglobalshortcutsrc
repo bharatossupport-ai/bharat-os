@@ -1,2 +1,17 @@
 [services][bharatos-companion.desktop]
 _launch=Meta+Space
+
+[services][org.kde.dolphin.desktop]
+_launch=Meta+E
+
+[services][org.kde.plasma-systemmonitor.desktop]
+_launch=Ctrl+Shift+Esc
+
+[services][org.kde.spectacle.desktop]
+RectangularRegionScreenShot=Meta+Shift+S
+
+[services][systemsettings.desktop]
+_launch=Meta+I
+
+[services][org.kde.kcalc.desktop]
+_launch=Calculator

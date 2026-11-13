@@ -3,4 +3,4 @@ AccentColor=196,98,45
 ColorScheme=BreezeDark
 
 [KDE]
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=org.bharatos.desktop

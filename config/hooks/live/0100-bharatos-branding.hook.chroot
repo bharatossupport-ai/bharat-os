@@ -36,3 +36,9 @@ fi
 
 # Companion AI first-boot setup
 systemctl enable bharatos-ai-setup.service || true
+
+# Firewall on by default (allow KDE Connect)
+ufw default deny incoming || true
+ufw allow 1714:1764/tcp || true
+ufw allow 1714:1764/udp || true
+sed -i 's/^ENABLED=no/ENABLED=yes/' /etc/ufw/ufw.conf || true

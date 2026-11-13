@@ -13,6 +13,34 @@
 - **Installer:** Calamares (graphical), branded BharatOS.
 - **Look:** dark charcoal with terracotta accent, Himalaya wallpaper.
 
+## Mac and Windows features, BharatOS style
+| You know it as | In BharatOS | Shortcut |
+|---|---|---|
+| Spotlight / Windows Search | Search (KRunner) | Alt+Space |
+| Siri / Copilot | Companion AI (offline) | Meta+Space |
+| Dock / Taskbar | Centred floating dock | |
+| Start menu / Launchpad | App Drawer (top-left) | Meta |
+| Mission Control / Task View | Overview, 4 desktops, hot corner top-left | Meta+W |
+| Snap Layouts / Split View | Window tiling | Meta+T, Meta+arrows |
+| Clipboard history | Clipboard | Meta+V |
+| Snipping Tool / Screenshot | Spectacle | Meta+Shift+S |
+| File Explorer / Finder (with Quick Look previews) | Files (Dolphin) | Meta+E |
+| Task Manager / Activity Monitor | System Monitor | Ctrl+Shift+Esc |
+| Settings / System Settings | Settings | Meta+I |
+| Phone Link / AirDrop / Continuity | KDE Connect (Android and iPhone) | |
+| Time Machine / File History | Timeshift backups | |
+| FileVault / BitLocker | Full-disk encryption in installer, Vault folders | |
+| Windows Defender Firewall | Firewall (on by default) | |
+| Keychain / Credential Manager | Wallet | |
+| Disk Utility | Partition Manager, Disk health, Filelight | |
+| Remote Desktop | KRDC / Desktop Sharing | |
+| Night Shift / Night light | Night Colour (automatic) | |
+| App Store / Microsoft Store | Discover + Flathub | |
+| Calculator, Clock, Calendar, Camera, Music, Video, Office | KCalc, Clock, Merkuro, Kamoso, Elisa, Haruna, LibreOffice | |
+| Run Windows apps | Wine (double-click .exe/.msi) | |
+
+Not possible on any PC Linux: running macOS apps, iCloud/iMessage, Xbox Game Pass, and games with kernel anti-cheat.
+
 ## Get the ISO
 1. Open the **Actions** tab → **Build BharatOS ISO** → **Run workflow** (or push to `main`).
 2. When the run finishes (about 30–60 min), download the **BharatOS-1.0-amd64** artifact.

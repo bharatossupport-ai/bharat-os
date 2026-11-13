@@ -1,0 +1,46 @@
+# macOS / Windows-class features
+# Phone link / AirDrop-style sharing with Android & iPhone
+kdeconnect
+# Time Machine / File History style backups
+timeshift
+# Task Manager / Activity Monitor
+plasma-systemmonitor
+# Disk Utility / Disk Management, disk health, space usage
+partitionmanager
+plasma-disks
+filelight
+# Printers and scanners
+cups
+print-manager
+system-config-printer
+skanpage
+# Remote Desktop (connect to and share this PC)
+krdc
+krfb
+# Firewall (Windows Defender Firewall style) and encrypted vaults (FileVault/BitLocker style folders)
+ufw
+plasma-firewall
+plasma-vault
+# Keychain / Credential Manager
+kwalletmanager
+# Displays, power, battery, Bluetooth, screen lock, system info
+kscreen
+powerdevil
+bluedevil
+kde-config-screenlocker
+kinfocenter
+# Calculator, Clock/Alarms/Timer, Calendar, Camera, Music, Video, Notes, Help
+kcalc
+kclock
+merkuro
+kamoso
+elisa
+haruna
+kwrite
+khelpcenter
+# File previews (Quick Look style thumbnails), browser media controls, portals
+kio-extras
+ffmpegthumbs
+kdegraphics-thumbnailers
+plasma-browser-integration
+xdg-desktop-portal-kde
