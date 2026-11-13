@@ -1,0 +1,7 @@
+[Default Applications]
+application/x-ms-dos-executable=bharatos-run-windows.desktop
+application/x-msdownload=bharatos-run-windows.desktop
+application/x-msi=bharatos-run-windows.desktop
+application/vnd.microsoft.portable-executable=bharatos-run-windows.desktop
+application/x-dosexec=bharatos-run-windows.desktop
+application/x-apple-diskimage=bharatos-open-mac.desktop

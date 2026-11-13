@@ -1,0 +1,6 @@
+#!/bin/sh
+# Double-click handler for Windows programs
+case "$1" in
+  *.msi|*.MSI) exec wine msiexec /i "$1" ;;
+  *) exec wine start /unix "$1" ;;
+esac

@@ -1,0 +1,12 @@
+# Run Windows apps (.exe / .msi)
+wine
+wine64
+winetricks
+# App Store (Flathub: VS Code, Spotify, Telegram, OBS, Zoom, Steam ...)
+flatpak
+plasma-discover
+plasma-discover-backend-flatpak
+# Open Mac files (.dmg disk images, HFS+ drives) and archives
+7zip
+dmg2img
+hfsprogs

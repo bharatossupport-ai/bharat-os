@@ -1,0 +1,7 @@
+#!/bin/sh
+# 32-bit Wine for older Windows apps, and the Flathub app store
+set -e
+dpkg --add-architecture i386
+apt-get update
+apt-get install -y --no-install-recommends wine32:i386 || echo "wine32 not installed; 64-bit Windows apps still work"
+flatpak remote-add --system --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo || true

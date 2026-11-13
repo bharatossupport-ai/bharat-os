@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Open Mac File
+Comment=Extract files from .dmg and .pkg
+Exec=bharatos-open-mac %f
+Icon=package-x-generic
+MimeType=application/x-apple-diskimage;application/x-xar;
+NoDisplay=true

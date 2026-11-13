@@ -33,7 +33,7 @@ APPS = {"files": "dolphin", "file manager": "dolphin", "browser": "firefox-esr",
         "code": "kate", "settings": "systemsettings", "writer": "libreoffice --writer",
         "calc": "libreoffice --calc", "spreadsheet": "libreoffice --calc",
         "slides": "libreoffice --impress", "music": "vlc", "video": "vlc",
-        "photos": "gwenview", "pdf": "okular", "screenshot": "spectacle"}
+        "photos": "gwenview", "pdf": "okular", "screenshot": "spectacle", "store": "plasma-discover", "app store": "plasma-discover"}
 SERVICES = {"digilocker": "https://www.digilocker.gov.in", "umang": "https://web.umang.gov.in",
             "irctc": "https://www.irctc.co.in", "upi": "https://www.npci.org.in"}
 
@@ -107,7 +107,21 @@ def t_set_volume(percent):
     subprocess.run(["pactl", "set-sink-volume", "@DEFAULT_SINK@", f"{int(percent)}%"])
     return f"Volume set to {percent}%."
 
+def t_install_app(name):
+    r = subprocess.run(["flatpak", "search", "--columns=application", name], capture_output=True, text=True)
+    ids = [l.strip() for l in r.stdout.splitlines() if "." in l]
+    if not ids:
+        return f"No app called {name} in the store."
+    r = subprocess.run(["flatpak", "install", "-y", "--user", "flathub", ids[0]], capture_output=True, text=True, timeout=1800)
+    return f"Installed {ids[0]}." if r.returncode == 0 else r.stderr[-1500:]
+
+def t_run_windows_app(path):
+    subprocess.Popen(["bharatos-run-windows", str(_safe(path))], start_new_session=True)
+    return f"Started Windows program {path} with Wine."
+
 TOOLS = {
+ "install_app": (t_install_app, "Install an app from the BharatOS store (Flathub), e.g. 'vscode', 'spotify', 'telegram', 'obs', 'zoom'.", {"name": "string"}, True),
+ "run_windows_app": (t_run_windows_app, "Run a downloaded Windows .exe or .msi program.", {"path": "string"}, True),
  "open_app": (t_open_app, "Open a desktop application by name (files, browser, terminal, editor, settings, writer, calc, slides, music, photos, pdf, screenshot).", {"name": "string"}, False),
  "open_url": (t_open_url, "Open a website or Indian service (digilocker, umang, irctc, upi) in the browser.", {"url": "string"}, False),
  "web_search": (t_web_search, "Search the web in the browser.", {"query": "string"}, False),

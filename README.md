@@ -7,6 +7,9 @@
 - **Companion AI:** press **Meta + Space** anywhere. Runs locally through Ollama on **Qwen3.5 4B** (~3.4 GB RAM, works on 6 GB PCs). Tools: open apps, open websites and Indian services (DigiLocker, UMANG, IRCTC, UPI), web search, read/write files, create folders, run commands, type and press keys, volume, system info.
 - **First-run tour:** language, meet Companion, try a command, Autopilot vs Ask me first.
 - **Made for India:** Indic fonts and input (ibus-m17n), en_IN/hi_IN locales, IST time zone.
+- **Windows apps:** double-click any `.exe` or `.msi` to run it (Wine 10, 64- and 32-bit). Many apps work; heavy games and anti-cheat software may not.
+- **App Store:** Discover with Flathub: VS Code, Spotify, Telegram, OBS, Zoom, Steam, Chrome and thousands more. Or ask Companion: "install spotify".
+- **Mac files:** `.dmg` and `.pkg` open and show their files; Mac drives (HFS+) can be read. Mac programs themselves cannot run on a PC, so BharatOS points you to the Linux or Windows version.
 - **Installer:** Calamares (graphical), branded BharatOS.
 - **Look:** dark charcoal with terracotta accent, Himalaya wallpaper.
 

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Run Windows App
+Comment=Run .exe and .msi programs on BharatOS
+Exec=bharatos-run-windows %f
+Icon=wine
+MimeType=application/x-ms-dos-executable;application/x-msdownload;application/x-msi;application/x-ms-installer;application/vnd.microsoft.portable-executable;application/x-dosexec;
+NoDisplay=true

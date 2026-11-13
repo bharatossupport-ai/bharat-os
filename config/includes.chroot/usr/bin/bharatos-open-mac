@@ -1,0 +1,7 @@
+#!/bin/sh
+# Opens a Mac .dmg / .pkg and shows its files (Mac programs themselves can't run on PC Linux)
+f="$1"; out="$HOME/Downloads/$(basename "${f%.*}")-files"
+mkdir -p "$out"
+7z x -y -o"$out" "$f" >/dev/null 2>&1 || { dmg2img "$f" "$out/disk.img" && 7z x -y -o"$out" "$out/disk.img" >/dev/null 2>&1; }
+notify-send "BharatOS" "Opened Mac file into $out. Look for a Linux or Windows version of the app in Discover." 2>/dev/null
+exec xdg-open "$out"
