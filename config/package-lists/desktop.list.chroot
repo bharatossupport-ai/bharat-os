@@ -1,0 +1,37 @@
+# Core desktop: KDE Plasma (minimal)
+kde-plasma-desktop
+plasma-nm
+plasma-pa
+sddm
+kwin-wayland
+konsole
+dolphin
+kate
+ark
+gwenview
+okular
+spectacle
+systemsettings
+# Installer
+calamares
+calamares-settings-debian
+# Apps
+firefox-esr
+libreoffice-writer
+libreoffice-calc
+libreoffice-impress
+vlc
+# System
+network-manager
+pipewire-audio
+bluez
+firmware-linux
+sudo
+curl
+ca-certificates
+zstd
+git
+# Live system
+live-boot
+live-config
+live-config-systemd

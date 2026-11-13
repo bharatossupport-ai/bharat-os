@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Welcome to BharatOS
+Exec=bharatos-welcome --force
+Icon=start-here
+Categories=System;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Companion AI
+Exec=companion --background
+NoDisplay=true
+X-KDE-autostart-phase=2

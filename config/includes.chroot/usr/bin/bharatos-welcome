@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python3 /usr/lib/bharatos/companion/welcome.py "$@"

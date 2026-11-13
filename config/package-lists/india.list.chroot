@@ -1,0 +1,8 @@
+# Indian languages: fonts + input
+fonts-indic
+fonts-noto-core
+fonts-noto-ui-core
+ibus
+ibus-m17n
+m17n-db
+locales

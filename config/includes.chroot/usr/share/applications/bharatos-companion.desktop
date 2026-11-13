@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Companion AI
+Name[hi]=कंपैनियन एआई
+Comment=Your offline AI that operates this PC
+Exec=companion
+Icon=help-about
+Categories=Utility;
+X-KDE-Shortcuts=Meta+Space

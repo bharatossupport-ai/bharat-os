@@ -1,0 +1,16 @@
+[Unit]
+Description=BharatOS: set up Companion's local AI
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=!/var/lib/bharatos-ai-ready
+ConditionKernelCommandLine=!boot=live
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bharatos-ai-setup
+TimeoutStartSec=infinity
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

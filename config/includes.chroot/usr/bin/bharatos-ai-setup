@@ -1,0 +1,12 @@
+#!/bin/sh
+# Installs the local AI runtime (Ollama) and the Companion model on first boot.
+set -e
+MODEL="${BHARATOS_MODEL:-qwen3.5:4b}"
+until curl -fsS --max-time 10 https://ollama.com >/dev/null 2>&1; do sleep 30; done
+if ! command -v ollama >/dev/null 2>&1; then
+  curl -fsSL https://ollama.com/install.sh | sh
+fi
+systemctl enable --now ollama.service || true
+for i in 1 2 3 4 5; do sleep 5; ollama list >/dev/null 2>&1 && break; done
+ollama pull "$MODEL"
+touch /var/lib/bharatos-ai-ready
